@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+        <h1>Public Administration</h1>
+        <img src="images/logo.jpeg" alt="Public Administration Logo" style="height: 120px; width: auto;">
+    
+    </header> 
+    <style>
+        /* General adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust header layout */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header img {
+        margin-top: 10px;
+        height: 60px; /* Smaller logo */
+    }
+
+    /* Make buttons fill the screen width */
+    .week-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Adjust news sections */
+    .container {
+        width: 95%; /* Reduce width to fit smaller screens */
+        margin: 0 auto;
+    }
+
+    .news-item img {
+        height: auto;
+    }
+
+    .news-item p {
+        font-size: 14px; /* Slightly smaller font */
+    }
+}
+
+/* Further adjustments for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    .week-button {
+        font-size: 14px;
+    }
+
+    .news-item p {
+        font-size: 12px;
+    }
+}
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #580303; /* Blue background */
+    color: white; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header img {
+    height: 80px; /* Increase logo size */
+    width: auto;
+    border-radius: 5px; /* Add rounded corners */
+}
+body {
+    font-family: 'Arial', sans-serif; /* Clean font */
+    background: linear-gradient(to right, #3d0101, #770000); /* Subtle gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #490d0d;
+            color: #ffffff;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .news-item {
+            background: #fff;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item h2 {
+            margin-top: 0;
+            color: #50000b;
+        }
+
+        .news-item p.date {
+            font-size: 0.9em;
+            color: #440000;
+            margin-bottom: 10px;
+        }
+
+        .news-item a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #500101;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .news-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            color: #ffffff;
+            font-size: 0.9em;
+        }
+    .week-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    background-color: #ffffff; /* Green color */
+    color: rgb(65, 3, 3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.week-button:hover {
+    background-color: #ffffff; /* Darker green */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+        .week-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    color: rgb(80, 3, 3);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: left;
+}
+
+.week-button:hover {
+    background-color: #2c0101;
+}
+
+.week-news {
+    padding: 15px;
+    border: 1px solid #640016;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #530000;
+}
+.week-news {
+    padding: 20px;
+    border: 1px solid #3a0202;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #3b0808; /* White background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.news-item {
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news-item h2 {
+    font-size: 22px;
+    color: #333; /* Dark text color */
+    margin-bottom: 10px;
+}
+
+.news-item p.date {
+    font-size: 14px;
+    color: #666; /* Lighter text color */
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    color: #555; /* Medium gray */
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #420000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+    color: #520404;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+img {
+    max-width: 100%; /* Scale image to fit within its container */
+    height: auto;    /* Maintain aspect ratio */
+    display: block;  /* Prevent inline spacing issues */
+}
+@media (max-width: 768px) {
+    .news-item img {
+        width: 100%; /* Ensure the image fits within the news item */
+        max-height: 200px; /* Optional: Limit the height to avoid overly large images */
+        object-fit: cover; /* Crop image if it overflows */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Departmental Weekly News</h1>
+    </header>
+
+    <div class="container">
+        <div class="container">
+            <!-- Week 1 Button and News -->
+            <button class="week-button" onclick="toggleNews('week1')">Week 1 News</button>
+            <div id="week1" class="week-news">
+                <div class="news-item">
+                    <img src="images/gender-panel.jpeg" alt="Panel on Gender-Based Violence" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                    <h2>FJWU Hosts Panel on Gender-Based Violence</h2>
+                    <p class="date">Published: December 24, 2024</p>
+                    <p>Rawalpindi—Fatima Jinnah Women University (FJWU) held a panel discussion as part of the 16 Days of Activism Against Gender-Based Violence...</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="images/rosa-parks-day.jpg" alt="Rosa Parks Day" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+                    <h2>Rosa Parks Day: Honoring Courage and Legacy</h2>
+                    <p class="date">Published: December 24, 2024</p>
+                    <p>Lincoln Corners Pakistan hosted Rosa Park Day at SBARR, celebrating Rosa Parks' pivotal role in the civil rights movement...</p>
+
+                </div>
+            <div class="news-item">
+            <img src="images/human-library.jpg" alt="Human Library Session" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+            <h2>Human Library Session</h2>
+            <p class="date">Published: December 3, 2024</p>
+            <p>Dr. Noor ul Huda, a Ph.D. holder with a visual disability, led a Human Library session organized by the FJWU Library Society. This event aimed to foster understanding and empathy by allowing participants to engage with Dr. Huda's personal experiences and insights, highlighting the importance of inclusivity and diverse perspectives in academia.</p>
+            <a href="#">Read More</a>
+             </div>
+        
+            <div class="news-item">
+            <img src="images/grand-gala.png" alt="Grand Gala 2024" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+            <h2>Grand Gala 2024</h2>
+            <p class="date">Published: December 24, 2024</p>
+            <p>The Department of Bioinformatics & Biotechnology hosted its annual Grand Gala 2024, celebrating the achievements of students and faculty. This vibrant event, held on Campus II, provided attendees with a memorable experience filled with delicious food displays and engaging moments.</p>
+            <a href="#">Read More</a>
+            </div>
+        
+            <div class="news-item">
+            <img src="images/times-consultant.jpg" alt="Times Consultant Event" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+            <h2>Times Consultant Event</h2>
+            <p class="date">Published: December 24, 2024</p>
+            <p>Times Consultant aimed at exploring study abroad opportunities in various countries. This event provided students with essential insights into course selection, visa processes, and university applications. It offered a unique platform for students to engage directly with consultants and gain valuable guidance for their educational journeys abroad.</p>
+            <a href="#">Read More</a>
+            </div>
+        
+            <div class="news-item">
+            <img src="images/alumni-corner.jpeg" alt="Alumni Corner" style="width: 100%; border-radius: 5px; margin-bottom: 10px;">
+            <h2>Alumni Corner</h2>
+            <p class="date">Published: December 24, 2024</p>
+            <p>Fatima Jinnah students participated in an Inter-University thesis competition, competing against 24-25 MS and PhD holders. Suman Riza secured the third position and received a cash prize, a certificate, and a trophy for her outstanding research on "The Impact of Climate Change on Women's Well-being." Another student from the university secured the second position.</p>
+            <a href="#">Read More</a>
+            </div>
+         
+    
+    </div>
+
+    <footer>
+        &copy; 2024 Department of Public Administration, FJWU. All rights reserved.
+    </footer>
+    <script>
+        function toggleNews(weekId) {
+            const newsSection = document.getElementById(weekId);
+            if (newsSection.style.display === "none" || newsSection.style.display === "") {
+                newsSection.style.display = "block";
+            } else {
+                newsSection.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
